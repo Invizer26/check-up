@@ -1,0 +1,104 @@
+.header{
+    height: 67px;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__info{
+    display: flex;
+    flex-direction: row;
+    height: 43px;
+    margin: auto 0;
+}
+
+.header__infoMobile{
+    display: none;
+}
+
+.logo{
+    height: 29px;
+    margin: auto 21px auto 0;
+}
+
+.path{
+    height: 20px;
+    margin-right: 3px;
+}
+
+.address{
+    font-family: PT Sans Caption;
+    font-size: 14px;
+    line-height: 21px;
+    color: #364844;
+}
+
+.address__house{
+    color: #868686;
+}
+
+.appointment{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.appointment__phone{
+    display: flex;
+    align-items: center;
+    font-family: PT Sans Caption;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 35px;
+}
+
+.appointment__phone__whatsapp{
+    margin-right: 9px;
+}
+
+@media (max-width: 376px) {
+    .appointment, .header__info{
+        display: none;
+    }
+
+    .header{
+        height: 65px;
+        padding: 0 var(--mobile-padding);
+        position: sticky;
+        top: 0;
+        background: #F7F7F7;
+        z-index: 2;
+    }
+
+    .header .logo{
+        width: 62px;
+        height: auto;
+
+        position: absolute;
+        left: 97px;
+        top: 24px;
+    }
+
+
+    .header__infoMobile{
+        display: block;
+        width: 140px;
+        margin: auto 0 auto auto;
+
+        font-family: PT Sans Caption;
+        font-style: normal;
+        line-height: 24px;
+        text-align: right;
+    }
+
+    .header__infoMobile__phone{
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .header__infoMobile__address{
+        font-size: 13px;
+    }
+
+}

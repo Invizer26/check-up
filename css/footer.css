@@ -1,0 +1,31 @@
+.footer{
+    margin-top: 92px;
+    padding: 0 calc((100% - 1140px) / 2);
+    height: 144px;
+    background: #08664F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > .logo{
+    margin: 0;
+}
+
+.socialNetworks{
+
+}
+
+.socialNetworks > img{
+    cursor: pointer;
+}
+
+.socialNetworks > img + img{
+    margin-left: 15px;
+}
+
+@media (max-width: 376px) {
+    .footer{
+        justify-content: space-around;
+    }
+}

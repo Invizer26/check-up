@@ -1,0 +1,36 @@
+@import "header.css";
+@import "button.css";
+@import "appointment.css";
+@import "navMenu.css";
+@import "info.css";
+@import "checkUp.css";
+@import "carousel.css";
+@import "footer.css";
+
+@font-face {
+    font-family: PT Sans Caption;
+    src: url("../fonts/PT_Sans-Caption-Web-Regular.ttf");
+}
+
+:root{
+    --mobile-padding: 17px;
+}
+
+*{
+
+    color: #364844;
+    margin: 0;
+    padding: 0;
+}
+
+.secondText{
+    color: #868686;
+}
+
+.center{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+}

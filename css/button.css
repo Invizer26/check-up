@@ -1,0 +1,17 @@
+.btn{
+    font-family: PT Sans Caption;
+    font-size: 14px;
+    line-height: 21px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 196px;
+    height: 43px;
+
+}
+
+.btn-white{
+    color: #1FA181;
+    background: #F6F6F6;
+    font-weight: bold;
+}
