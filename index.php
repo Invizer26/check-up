@@ -13,6 +13,7 @@
     <link href="fonts/PT_Sans-Caption-Web-Regular.ttf" rel="">
     <link href="css/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script defer src="node_modules/jquery/dist/jquery.js"></script>
     <script defer src="js/mask.js"></script>
     <script defer src="js/offcanvas.js"></script>
     <script defer src="js/carouselCounter.js"></script>
@@ -26,7 +27,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="php/form.php" method="post" class="form" id="appointmentForm" name="appointmentForm">
+                    <form method="post" class="form" id="appointmentForm" name="appointmentForm">
                         <label for="name" class="form-label">Введите имя:</label>
                         <input type="text" name="name" id="name" placeholder="Имя" class="form-control">
                         <label for="phone" class="form-label">Введите телефон:</label>

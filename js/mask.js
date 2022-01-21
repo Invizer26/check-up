@@ -1,3 +1,5 @@
+
+
 window.addEventListener("DOMContentLoaded", function() {
     function setCursorPosition(pos, elem) {
         elem.focus();
@@ -30,11 +32,23 @@ window.addEventListener("DOMContentLoaded", function() {
     input.onfocus = () => input.defaultValue = "+7(___)___-__-__";
     input.addEventListener("input", mask, false)
 
-    document.getElementById("popUpForm").onsubmit = () => {
-        console.log(input.value);
+    $('#appointmentForm').submit(function (event) {
+        // console.log(input.value);
+        event.preventDefault();
         if (input.value[1] != 7 || input.value.includes("_")){
             alert("Неверно введён телефон");
             return false;
         }
-    }
+        else {
+            let formData = $(this).serialize()
+            $.ajax({
+                type: 'POST',
+                url: '../php/form.php',
+                data: formData,
+                success: function (data){
+                    alert('заявка отправленна');
+                }
+            })
+        }
+    })
 });
